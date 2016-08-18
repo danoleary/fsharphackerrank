@@ -44,12 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="6_LetsReview.fs" />
+    <Compile Include="10_BinaryNumbers.fs" />
     <None Include="Script.fsx" />
     <Compile Include="0_HelloWorld.fs" />
     <Compile Include="2_Operators.fs" />
     <Compile Include="3_IntroToConditionalStatements.fs" />
     <Compile Include="5_Loops.fs" />
+    <Compile Include="6_LetsReview.fs" />
+    <Compile Include="7_Arrays.fs" />
+    <Compile Include="8_DictionariesAndMaps_TimeOut.fs" />
+    <Compile Include="9_Recursion.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
