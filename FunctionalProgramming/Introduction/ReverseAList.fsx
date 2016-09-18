@@ -9,7 +9,4 @@ let isNotNull x =
 
 let list = Seq.initInfinite read |> Seq.takeWhile isNotNull |> Seq.map int
 
-list |> Seq.mapi (fun i x -> i % 2  <> 0, x)
-     |> Seq.filter fst
-     |> Seq.map snd
-     |> Seq.iter (printfn "%i")
+list |> Seq.rev |> Seq.iter (printfn "%i")
