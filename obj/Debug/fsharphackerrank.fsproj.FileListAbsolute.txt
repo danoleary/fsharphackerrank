@@ -1,0 +1,4 @@
+c:\Users\danoleary\Documents\GitHub\fsharphackerrank\obj\Debug\fsharphackerrank.fsprojResolveAssemblyReference.cache
+c:\Users\danoleary\Documents\GitHub\fsharphackerrank\bin\Debug\fsharphackerrank.dll
+c:\Users\danoleary\Documents\GitHub\fsharphackerrank\bin\Debug\FSharp.Core.dll
+c:\Users\danoleary\Documents\GitHub\fsharphackerrank\bin\Debug\FSharp.Core.xml
