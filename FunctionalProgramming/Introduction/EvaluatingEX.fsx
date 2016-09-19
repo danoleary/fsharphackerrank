@@ -14,12 +14,10 @@ let multiply x y = x * y
 let factorial x = [1..x] |> List.reduce (multiply)
 let term x n = (x ** float n) / float (factorial n)
 
-let firstTenTerms x = [1..10] 
-                                |> List.map (fun i -> term x i) 
-                                |> List.sum
-                                |> (fun y -> System.Math.Round(y, 4))
-                                |> (fun y -> y + float 1)
-                         
-firstTenTerms 20.0000
+let firstTenTerms x = [1..9] 
+                      |> List.map (fun i -> term x i) 
+                      |> List.sum
+                      |> (fun y -> System.Math.Round(y, 4))
+                      |> (fun y -> y + float 1)
 
 list |> Seq.iter (fun x -> printfn "%f" (firstTenTerms x))

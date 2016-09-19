@@ -2,3 +2,7 @@ c:\Users\danoleary\Documents\GitHub\fsharphackerrank\obj\Debug\fsharphackerrank.
 c:\Users\danoleary\Documents\GitHub\fsharphackerrank\bin\Debug\fsharphackerrank.dll
 c:\Users\danoleary\Documents\GitHub\fsharphackerrank\bin\Debug\FSharp.Core.dll
 c:\Users\danoleary\Documents\GitHub\fsharphackerrank\bin\Debug\FSharp.Core.xml
+c:\Sandbox\fsharphackerrank\fsharphackerrank\fsharphackerrank\bin\Debug\fsharphackerrank.dll
+c:\Sandbox\fsharphackerrank\fsharphackerrank\fsharphackerrank\bin\Debug\FSharp.Core.dll
+c:\Sandbox\fsharphackerrank\fsharphackerrank\fsharphackerrank\bin\Debug\FSharp.Core.xml
+c:\Sandbox\fsharphackerrank\fsharphackerrank\fsharphackerrank\obj\Debug\fsharphackerrank.fsprojResolveAssemblyReference.cache
