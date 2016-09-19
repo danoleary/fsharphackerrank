@@ -1,22 +1,31 @@
 open System
 
-let readInputStringToIntArray = Console.ReadLine() |> (fun x -> x.Split ' ') |> Array.map (int)
-let aValues = readInputStringToIntArray
-let bValues = readInputStringToIntArray
-let rAndlValues = readInputStringToIntArray
+// let readInputStringToIntArray = Console.ReadLine() |> (fun x -> x.Split ' ') |> Array.map (int)
+// let abCombined = Array.zip readInputStringToIntArray readInputStringToIntArray
+// let rAndlValues = readInputStringToIntArray
 
-let abCombined = Array.zip aValues bValues
+let abCombined = [(1, 6); (2, 7); (3, 8); (4, 9); (5, 10)] |> List.toArray
+let rAndlValues = [1; 4]
 
-let term (abx: int * int * int) = 
+//increase index by 1 and divide by new index
+let term (abx: float * float * float) = 
                 let (a, b, x) = abx
-                let a = float a
-                let b = float b
-                let x = float x
-                a * (x ** b) 
+                (a / b) * (x ** (b + float 1)) 
 
-let polynomial array x = array |> Array.map (fun ab -> fst ab, snd ab, x) |> Array.map term |> Array.sum
+let r = float rAndlValues.[0]
+let l = float rAndlValues.[1]
+let intervals = [r .. 0.0001 .. l]
 
-let max
+let sumForValue (ab: int * int) = intervals 
+                                |> List.map (fun y -> float (fst ab), float (snd ab), y)
+                                 |> List.map term
+                                 |> List.sum
+
+
+let total = abCombined |> Array.map sumForValue 
+
+// get value for each interval between r and l
+
 
 
 
