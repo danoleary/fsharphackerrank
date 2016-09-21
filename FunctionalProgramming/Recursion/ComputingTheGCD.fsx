@@ -2,10 +2,15 @@ open System
 
 let input = Console.ReadLine() |> (fun x -> x.Split ' ') |> Array.map int
 
-let rec GCD x y = 
-        match (x, y) with
-        | (x, y) when x=y -> x
-        | (x, y) when x>y -> GCD (x-y) y
-        | _ -> GCD (y-x) y
+let rec gcd x y = 
+        match y with
+        | 0 -> x
+        | _ -> gcd y (x % y)
 
-let result = GCD input.[0] input.[1]
+let a = input.[0]
+
+let b = input.[1]
+
+let result = gcd a b
+
+printfn "%i" result
