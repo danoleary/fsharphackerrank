@@ -88,6 +88,5 @@
 --target:exe
 --win32manifest:/Users/danieloleary/.nuget/packages/Microsoft.FSharp.Compiler.netcore/1.0.0-alpha-160629/lib/netstandard1.6/../../runtimes/any/native/default.win32manifest
 --targetprofile:netcore
-/Users/danieloleary/GitHub/fsharphackerrank/dotnetcore/PerimeterOfPolygon.fs
 /Users/danieloleary/GitHub/fsharphackerrank/dotnetcore/obj/Debug/netcoreapp1.1/dotnet-compile.assemblyinfo.fs
 /Users/danieloleary/GitHub/fsharphackerrank/dotnetcore/Program.fs
