@@ -2,8 +2,16 @@
 
 [<EntryPoint>]
 let main argv = 
-    let n = Console.ReadLine() |> int
+    let p = Console.ReadLine()
+    let q = Console.ReadLine()
 
+
+
+    let rec mingle p q i =
+        if i = p.length then
+            ()
+        else
+            
     
 
     0
