@@ -1,4 +1,4 @@
-﻿open System
+open System
 
 [<EntryPoint>]
 let main argv = 
@@ -15,7 +15,7 @@ let main argv =
                 Array.set arr (i*2) p.[i] |> ignore
                 Array.set arr ((i*2)+1) q.[i] |> ignore
                 mingleRec arr (i+1)
-        mingleRec result 0
+        mingleRec result 0 
 
     let result = mingle p q
 
