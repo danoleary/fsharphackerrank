@@ -2,23 +2,28 @@
 
 [<EntryPoint>]
 let main argv = 
-    let p = Console.ReadLine() |> List.ofSeq |> List.toArray
-    let q = Console.ReadLine() |> List.ofSeq |> List.toArray
 
-    let mingle (p: char array) (q: char array) =
-        let length = Array.length p
-        let result = Array.zeroCreate (length * 2)
-        let rec mingleRec arr i =
+    let numInputs = Console.ReadLine() |> int
+    let read _ = Console.ReadLine()
+    let inputs = Seq.initInfinite read |> Seq.take numInputs |> List.ofSeq
+
+    let getRotations input =
+        let length = String.length input
+        let rec rotateRec word result i =
             if i = length then
-                arr
+                result
             else
-                Array.set arr (i*2) p.[i] |> ignore
-                Array.set arr ((i*2)+1) q.[i] |> ignore
-                mingleRec arr (i+1)
-        mingleRec result 0
+                let rotate x =
+                    match x with
+                    | hd::tail -> tail @ [hd] |> Array.ofList |> System.String
+                    | _ -> ""
+                let newWord = rotate (word |> List.ofSeq)
+                
+                let newResult = sprintf "%s %s" result newWord
 
-    let result = mingle p q
+                rotateRec newWord newResult (i+1)
+        Console.WriteLine((rotateRec input "" 0).Trim()) |> ignore
 
-    Console.WriteLine(result |> System.String)
+    inputs |> List.iter getRotations
 
     0
